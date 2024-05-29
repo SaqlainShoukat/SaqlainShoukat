@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  background-image: linear-gradient(green, blue);
+}
+.main{
+  width: 90pw
+}
+.container{
+  display: flex;
+}
+.infocontainer{
+  background-color: pink
+}
+.infocontainer{
+  height: 500px;
+}
+.infocontainer{
+  width: 1000px;
+}
+.infocontainer{
+  margin: 100px
+}
+.infocontainer{
+  display: flex
+}
+.img1{
+   width: 300px;
+}
+.img1{
+  height: 300px;
+}
+.img1{
+  border-radius: 50%;
+}
+.img1{
+  overflow: hidden;
+}
+.img1{
+  margin-top: 70px;
+}
+.img1{
+  margin-right: 20px;
+}
+.infocontainer{
+  justify-content: space-around
+}
+.saqlain{
+  display: flex;
+}
+.saqlain{
+  justify-content: center;
+}
+.saqlain{
+  flex-direction: column;
+}
+
+.hello{
+  font-size: 45px;
+}
+.hello{
+  color: white;
+}
+div .name{
+  font-size: 40px;
+}
+div .name{
+  font-style: italic
+}
+div .name{
+  font-weight: bold;
+}
+div .about{
+  font-size: 30px;
+}
+div .aboutmore{
+  font-size: 15px;
+}
+div .aboutmore{
+  font-weight: bold;
+}
+.button{
+  margin-top: 21px;
+}
+div .aboutmore{
+  margin-top: 11px;
+}
+
+
+/* this is all about buttons*/
+
+div .btn{
+  border: 2px solid black;
+}
+div .btn{
+  padding: 9px;
+}
+div .btn{
+  border-radius: 21px;
+}
+div .btn{
+  background-color: blue;
+}
+div .btn{
+  color: white;
+}
+div .btn{
+  font-weight: bold;
+}
+div .btn{
+  font-size: 19px;
+}
+div .btn{
+  margin-inline: 11px;
+}
+div .btn{
+  cursor: pointer;
+}
+div .button .btn:hover{
+  color: blue;
+}
+div .button .btn:hover{
+  background-color: white;
+}
+
+
+.form-label{
+  margin-top: 9px;
+}
+.infocontainer{
+  border: 2px solid black;
+}
+.infocontainer{
+  border-radius: 39px;
+}
+div .saqlain{
+  padding-left: 22px;
+}
+.infocontainer{
+  background-image: url(https://img.freepik.com/free-vector/abstract-background-with-rainbow-coloured-flow-design_1048-12856.jpg?size=626&ext=jpg)
+}
+.infocontainer{
+  background-repeat: no-repeat
+}
+.infocontainer{
+  background-size: 1000px;
+}
+.inimg{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.waimg{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.inimg,.waimg{
+  padding-inline: 30px;
+}
+/*All about nav bar*/
+.nabtn a{
+   text-decoration: none;
+}
+.na{
+ border: 2px solid black; 
+ font-weight: bold;
+ font-size: 22px;
+ padding: 11px;
+ border-radius: 32px;
+}
+div .na{ 
+ background-color: black;
+ color: white;
+}
+div .na:hover{
+  background-color: white;
+  color: black;
+}
+.nabtn,.infocontainer{
+  margin: 0px;
+  margin-inline: 100px;
+}
