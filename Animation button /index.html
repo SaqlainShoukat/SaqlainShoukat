@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation Button</title>
+</head>
+<style>
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  padding: 20px 100px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 40px;
+  position: relative;
+  top: 300px;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  
+}
+
+.btn:hover{
+  background-color: linear-gradient(90deg,#08ff08,#50e3fc,#bc13fe,#03a9fa,#0ff0f3);
+  background-size: 500%;
+  z-index: 1;
+  animation: blink 7s linear infinite;
+  
+}
+
+@keyframes blink{
+  from{
+    background-position: 0%;
+  }
+  to{
+    background-position: 500%;
+  }
+}
+</style>
+<body>
+<button class="btn">SAQLAIN</button>
+
+
+</body>
+</html>

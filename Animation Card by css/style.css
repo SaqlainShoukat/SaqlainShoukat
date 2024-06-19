@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: indigo;
+}
+
+.box{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  align-self: center;
+  background-color: blue;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.box::before{
+  content:'';
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: aquamarine;
+  box-shadow: 0 0 20px black;
+  animation: saqlain 4s linear infinite;
+}
+
+.box::after{
+  content:'';
+  position: absolute;
+  inset: 10px;
+  background-color: black;
+  border-radius: 16px;
+}
+
+@keyframes saqlain{
+  0%{
+    transform: rotate(0deg);
+  }/*
+  25%{
+    transform: rotate(-90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }*/
+ 100%{
+   transform: rotate(360deg);
+}
+}
