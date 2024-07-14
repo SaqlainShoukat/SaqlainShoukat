@@ -1,0 +1,250 @@
+/**{
+  margin: 0;
+  padding: 0;
+}*/
+nav a{
+  text-decoration: none;
+  color: white;
+  background-color: green;
+}
+nav{
+  background-color: green;
+  padding: 9px;
+}
+nav a:hover{
+  color: green;
+  background-color: white;
+}
+ol{
+  list-style-type: none;
+}
+
+.picnav {
+  position: relative; /* Ensure the div is positioned relative to itself */
+}
+
+.burger-image {
+  position: absolute; /* Position the burger image absolutely within the div */
+  top: 10px; /* Adjust top distance as needed */
+  right: 10px; /* Adjust right distance as needed */
+}
+h1, .p1{
+  margin-left: 20px;
+}
+.btn1 button{
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 13px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.btn1 button:hover{
+  color: black;
+  background-color: white;
+}
+.body{
+  border: 1px solid transparent;
+  background-color: greenyellow;
+}
+
+.body img{
+  border: 1px solid transparent;
+  margin-left: 20px;
+}
+
+h2{
+  font-size: 33px;
+  text-align: center;
+}
+.highlighted {
+    color: yellow;
+}
+.abtn button{
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 13px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin: 8px;
+}
+.abtn button:hover{
+  color: white;
+  background-color: black;
+}
+
+input, select{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.get{
+  border: 2px solid transparent;
+  background-color: skyblue;
+}
+
+.btn2{
+  border: 2px solid black;
+  padding: 6px;
+  margin-left: 20px;
+  background-color: lightgrey;
+}
+
+span{
+  border: 1px solid black;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.inp{
+  height: 110px;
+  width: 250px;
+  border-radius: 30px;
+ 
+}
+
+
+
+/*This is the way to change the input's placeholder color, background-color and other properties*/
+/*.inp::placeholder{
+   color: blue;
+   background-color: red;
+}*/
+
+
+
+.btn3{
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: seagreen;
+  border-radius: 50px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}
+
+.btn3:hover{
+  color: white;
+  background-color: black;
+}
+
+.timg img{
+  width: 300px;
+  height: 300px;
+  margin-left: 25px;
+  border: 2px solid whitesmoke;
+  box-shadow: 2px 2px 20px;
+  position: relative;
+}
+.tbtn{
+  width: 305px;
+  margin-left: 25px;
+  border: 2px solid whitesmoke;
+  box-shadow: 2px 2px 20px;
+  position: relative;
+  color: white;
+  background-color: seagreen;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.p3{
+  background-color: lightgreen;
+  border: 2px solid transparent;
+  padding: 10px;
+}
+.p3btn{
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  margin-left: 25%;
+}
+.p3btn:hover{
+  color: white;
+  background-color: lightseagreen;
+}
+
+.h2{
+  text-align: left;
+}
+
+.ubtn{
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: grey;
+  background-color: white;
+  border-radius: 50px;
+  margin-inline: 27px;
+}
+.ubtn:hover{
+  color: lawngreen;
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.stock{
+  border: 2px solid transparent;
+  background-color: peachpuff;
+}
+
+.card img{
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+}
+.card .h3{
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: greenyellow;
+  background-color: white;
+  border-radius: 50px;
+}
+.h3:hover{
+  color: black;
+  background-color: white;
+  border-top: 3px solid red;
+  border-bottom: 3px solid green;
+  border-left: 3px solid blue;
+  border-right: 3px solid yellow;
+}
+.card ul{
+  margin-left: 20px;
+}
+
+.card{
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 20px;
+}

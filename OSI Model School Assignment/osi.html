@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Card Book</title>
+  <link rel="stylesheet" href="osi.css">
+</head>
+<body>
+  <div id="book">
+    <div class="page">
+      <div class="frontpage">
+        <h2 class="hea">Imperial Science Academy KTS</h2>
+        <h3 class="hua">Assignment</h3>
+        <h2 class="hhh">Submitted To</h2>
+        <p class="pp">Sir Shahzad</p>
+        <h2 class="hhh">Submitted By</h2>
+        <p class="pp">Muhammad Saqlain Shoukat</p>
+        <h2 class="hhh">Roll Number</h2>
+        <p class="pp">876082</p>
+        <h2 class="hhh">Topic</h2>
+        <p class="pp">OSI MODEL</p>
+        <h2 class="hhh">Subject</h2>
+        <p class="pp">Computer</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Data Transmission Mode</h1>
+        <ul>
+          <li><h2>Define</h2></li>
+        </ul>
+        <p class="tt">Data transmission mode refers to the method and direction in which data is transmitted between two devices in a network.
+        </p>
+        <h2>Types</h2>
+        <p>Three Moded:-</p>
+        <ol>
+          <li>Simplex Mode</li>
+          <li>Half Duplex Mode</li>
+          <li>Full Duplex Mode</li>
+        </ol>
+      </div>
+    </div>
+    <div class="page">
+      <div class="content">
+        <h1>Explanation of Modes</h1>
+      <p>Each mode is suited for different applications based on the requirements for data flow and communication between devices.<br><br> Click <strong>Next Page</strong> to start Explanation. <br><br> Click on <strong>Video learning</strong> button to clear the concept about <strong>Data Transmission Modes</strong> before study them by watching a video of only <strong>5 minutes.</strong>
+      <br> 
+      <br>
+       <button class="nn"><a class="aaaa"  href="video.html">Video learning</a></button>
+      
+      </p>
+      </div>
+    </div>
+        <div class="page">
+      <div class="content">
+        <h2>1. Simplex Mode</h2>
+        <p>Data transmission is unidirectional. Data flows in only one direction, from the sender to the receiver, with no provision for the receiver to send data back. Example: Keyboard to computer.</p>
+        <button class="nn"><a class="aaaa"  href="simplex.html">Learn More</a></button>
+      </div>
+    </div>
+    <div class="page">
+      <div class="content">
+     <h2>2. Half Duplex Mode</h2>
+        <p>Data transmission is bidirectional, but not simultaneously. Data can flow in both directions, but only one direction at a time. Example: Walkie-talkies.</p>
+        <button class="nn"><a class="aaaa"  href="half.html">Learn More</a></button>
+      </div>
+    </div>
+      <div class="page">
+      <div class="content">
+        <h2>3. Full Duplex Mode</h2>
+        <p>Data transmission is bidirectional and simultaneous. Data can flow in both directions at the same time. Example: Telephone calls.</p>
+        <button class="nn"><a class="aaaa"  href="full.html">Learn More</a></button>
+      </div>
+    </div>
+    <div class="page">
+      <div class="content">
+        <p>This website is about <strong>Data Transmission Mode</strong> is Created by <strong>MUHAMMAD SAQLAIN SHOUKAT</strong> a <strong>Frontend Web Developer</strong></p>
+        <img src="https://yt3.ggpht.com/v2n5KDagiChMG0fcuH9mm89GmO57pyoiY_W1EHp2y6cadj-8hviev0uBc2oYb-3nHssEEjlq1w=s108-c-k-c0x00ffffff-no-rj" alt="" style=" border-radius: 20px; height: 200px; width: 200px;">
+        <br>
+        <br>
+        <button class="nn"><a class="aaaa"  href="https://saqlainshoukat.github.io/SaqlainShoukat/" target="_blank">About Developer</a></button>
+      </div>
+    </div>
+  </div>
+<button id="nextPageBtn" class="nn">Next Page</button>
+<div id="navigation">
+    <button id="prevPageBtn" class="nn">Previous Page</button>
+   
+  </div>
+  
+  <!-- From here JavaScript will start-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const pages = document.querySelectorAll('.page');
+  const nextPageBtn = document.getElementById('nextPageBtn');
+  let currentPageIndex = 0;
+
+  // Initially hide all pages except the first one
+  pages.forEach((page, index) => {
+    if (index !== 0) {
+      page.style.display = 'none';
+    }
+  });
+
+  // Function to show the next page
+  function showNextPage() {
+    if (currentPageIndex < pages.length - 1) {
+      pages[currentPageIndex].style.display = 'none';
+      currentPageIndex++;
+      pages[currentPageIndex].style.display = 'block';
+    }
+  }
+
+  // Event listener for the next page button
+  nextPageBtn.addEventListener('click', showNextPage);
+  
+       // Function to show the previous page
+      function showPrevPage() {
+        if (currentPageIndex > 0) {
+          pages[currentPageIndex].style.display = 'none';
+          currentPageIndex--;
+          pages[currentPageIndex].style.display = 'block';
+        }
+      }
+
+      // Event listeners for next and previous page buttons
+      nextPageBtn.addEventListener('click', showNextPage);
+      prevPageBtn.addEventListener('click', showPrevPage);
+});
+  </script>
+</body>
+</html>

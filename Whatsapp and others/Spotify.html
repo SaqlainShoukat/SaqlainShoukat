@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Clone</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="player">
+    <div id="track-info">
+      <h2 id="track-title">Track Title</h2>
+      <p id="artist">Artist</p>
+    </div>
+    <div id="controls">
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+    </div>
+  </div>
+  <div id="playlist">
+    <ul id="track-list">
+      <!-- Tracks will be dynamically added here -->
+    </ul>
+  </div>
+</div>
+
+<audio id="audio-player"></audio>
+<script>
+  // Sample data for tracks
+let tracks = [
+  { title: 'Track 1', artist: 'Artist A', audioSrc: 'track1.mp3' },
+  { title: 'Track 2', artist: 'Artist B', audioSrc: 'track2.mp3' },
+];
+
+// Function to display tracks
+function displayTracks() {
+  const trackList = document.getElementById('track-list');
+  trackList.innerHTML = ''; // Clear previous tracks
+  
+  tracks.forEach((track, index) => {
+    const trackElement = document.createElement('li');
+    trackElement.textContent = `${track.title} - ${track.artist}`;
+    trackElement.addEventListener('click', () => playTrack(index));
+    trackList.appendChild(trackElement);
+  });
+}
+
+// Function to play a track
+function playTrack(index) {
+  const audioPlayer = document.getElementById('audio-player');
+  const trackTitle = document.getElementById('track-title');
+  const artist = document.getElementById('artist');
+  
+  const track = tracks[index];
+  trackTitle.textContent = track.title;
+  artist.textContent = track.artist;
+  
+  audioPlayer.src = track.audioSrc;
+  audioPlayer.play();
+}
+
+// Event listeners for play and pause buttons
+document.getElementById('play-btn').addEventListener('click', () => {
+  const audioPlayer = document.getElementById('audio-player');
+  audioPlayer.play();
+});
+
+document.getElementById('pause-btn').addEventListener('click', () => {
+  const audioPlayer = document.getElementById('audio-player');
+  audioPlayer.pause();
+});
+
+// Initial display of tracks
+displayTracks();
+
+</script>
+</body>
+</html>

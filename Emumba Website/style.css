@@ -1,0 +1,349 @@
+/*This is all about the starting 2 lines of website*/
+a{
+  text-decoration: none;
+}
+.sp{
+  text-align: center;
+  border: 2px solid transparent;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+.strong{
+  color: orange;
+}
+.sb{
+  background-color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sb a{
+  text-decoration: none;
+}
+
+
+
+/*This is all about the navigation bar of the website*/
+.nimg{
+  padding-left: 230px;
+}
+.sidebar ul,a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.submenu,.submenu2{
+  display: none; 
+}
+
+.submenu.show,.submenu2.show{
+  display: block;
+}
+.submenu3,.submenu4{
+  display: none; 
+}
+.submenu3.show,.submenu4.show{
+  display: block;
+}
+.sidebar li{
+  border: 2px solid transparent;
+  margin-right: 20px;
+  padding: 20px;
+}
+.sidebar li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  color: black;
+}
+.sidebar li a:hover{
+  color: blue;
+}
+.nbtn{
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+}
+.nbtn a{
+  color: white;
+}
+
+
+
+/*This is all about the top floating 4 images and paragraphs*/
+.upper-img1{
+  background-image: url(https://worldstrides.com/wp-content/uploads/2015/07/iStock_000040849990_Large-786x524.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px;
+  font-size: 20px;
+  /*filter: blur(1px);*/
+}
+.startup1{
+  font-weight: bold;
+  font-size: 25px;
+  color: red; 
+}
+.upper-img2{
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px;
+  font-size: 20px;
+  display: none;
+  /*filter: blur(1px);*/
+}
+.startup2{
+  font-weight: bold;
+  font-size: 25px;
+  color: red;
+  display: none;
+}
+.upper-img3{
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px;
+  font-size: 20px;
+  display: none;
+  /*filter: blur(1px);*/
+}
+.startup3{
+  font-weight: bold;
+  font-size: 25px;
+  color: red; 
+  display: none;
+}
+.upper-img4{
+  background-color: darkorange;
+  padding: 90px;
+  font-size: 20px;
+  display: none;
+  /*filter: blur(1px);*/
+}
+.startup4{
+  font-weight: bold;
+  font-size: 25px;
+  color: red; 
+  display: none;
+}
+
+
+
+/* This is all about the first explanation of website  */
+.idiv{
+  padding-left: 23px;
+  background-color: whitesmoke;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 20px black;
+  position: relative;
+  animation: saqlain 2s infinite;
+}
+@keyframes saqlain {
+  0%{
+    background-color: skyblue;
+  }
+  25%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: seagreen;
+  }
+  75%{
+    background-color: lightyellow;
+  }
+  100%{
+    background-color: lightpink;
+  }
+  }
+.imge{
+  position: relative;
+  z-index: 2;
+}
+.awsi{
+  padding-left: 3px;
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  top: 15px;
+}
+.s2{
+  color: orangered;
+}
+.pz{
+  color: black;
+  font-weight: normal;
+}
+.u1 li{
+  color: orange; 
+}
+.play-button {
+  background-color: black;
+  border-top: 40px solid pink;
+  border-left: 40px solid lightpink;
+  border-right: 40px solid lightpink;
+  border-bottom: 40px solid lightpink;
+  padding: 80px;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0px 0px 20px black;
+  cursor: pointer;
+  position: relative;
+  animation: border-animation 2s infinite;
+}
+@keyframes border-animation {
+  0% {
+    border-color: lightpink lightpink lightpink lightpink;
+    background-color: black;
+  }
+  25% {
+    border-color: lightpink lightgreen lightpink lightpink;
+    background-color: blue;
+  }
+  50% {
+    border-color: lightpink lightpink yellow lightpink;
+    background-color: yellow;
+  }
+  75% {
+    border-color: lightpink lightpink lightpink skyblue;
+    background-color: darkseagreen;
+  }
+  100% {
+    border-color: blue lightpink lightpink lightpink;
+    background-color: mediumvioletred;
+  }
+}
+.play-button:hover {
+  background-color: hotpink;
+  color: black;
+}
+.wsb{
+  font-weight: bold;
+  font-size: 15px;
+}
+.play-button a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* This is all about the Services session */
+.sh2{
+  text-align: center;
+}
+.serp{
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 25px;
+  margin: 35px;
+}
+.serp:hover{
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px black;
+}
+.sst{
+  font-weight: bolder;
+  font-size: 19px;
+}
+.sst:hover{
+  color: mediumspringgreen;
+}
+.serdi{
+  width: 100px;
+  height: 100px;
+}
+.nd{
+  border: none;
+  margin-left: 28px;
+  background-color: white;
+}
+.ad{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* his is all about the aws explanation in the website */
+.aws{
+  background-color: antiquewhite;
+  border: 2px solid transparent;
+  animation: aws 3s infinite;
+}
+@keyframes aws{
+  0%{
+   background-color: antiquewhite; 
+  }
+  25%{
+  background-color: skyblue;
+  box-shadow: 0px 0px 20px black;
+  }
+  50%{
+    background-color: lightseagreen;
+    box-shadow: 0px 0px 20px blue;
+  }
+  75%{
+    background-color: lightpink;
+    box-shadow: 0px 0px 20px red;
+  }
+  100%{
+    background-color: mediumpurple;
+    box-shadow: 0px 0px 20px yellowgreen;
+  }
+}
+#awssi{
+  height: 130px;
+  width: 130px;
+  padding-left: 120px;
+}
+#awsp{
+  text-align: center;
+  align-items: center;
+  font: 1em Arial,sans-serif;
+}
+#awsbtn{
+  border: none;
+  margin-left: 90px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+#awsbtn:hover{
+  box-shadow: none;
+}
+#awsad{
+  text-decoration: none;
+  color: coral;
+  font-weight: bold;
+}
+#awsad:hover{
+  color: white;
+  font-weight: bold;
+}
+#awssbtn{
+  border: 2px solid coral;
+  padding: 13px;
+  border-radius: 10px;
+  color: coral;
+  background-color: white;
+  font-weight: bold;
+  margin-left: 160px;
+}
+#awssbtn:hover{
+  color: white;
+  background-color: coral;
+  font-weight: bold;
+}

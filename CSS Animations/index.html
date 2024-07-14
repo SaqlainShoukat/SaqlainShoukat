@@ -4,28 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CSS Animations</title>
+  <title>CSS Animation</title>
 </head>
 <style>
-body{
-  background-color: black;
-}
- .container{
-  background-color: yellow;
- }
- .box{
-   display: flex;
-   color: green;
-   position: relative;
- }
+.box1{
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 100px;
+    padding: 20px;
+    position: relative;
+    color: orange;
+    background-color: orange;
+    Animation: saqlain 3s infinite;
+  }
+ @keyframes saqlain{
+   0%{
+     transform: rotate(360deg);
+     left: 100px;
+     top: 100px;
+   }
+   50%{
+    transform: rotate(90deg);
+    left: 50px;
+    top: 30px;
+    border-radius: 50%;
+   }
+   100%{
+     transform: rotate(270deg);
+    left: 200px;
+    top: 100px;
+    border-radius: 100%;
+   }
+ } 
 </style>
 <body>
-<div class="container">
-  <div class="box">
-    Hello I am Saqlain.
-  </div>
+<div class="box1">
+  <p>1</p>
 </div>
-<img src="https://99designs-blog.imgix.net/blog/wp-content/dist/images/subscribe/surf-bear.png?auto=format&q=60&fit=max&w=930" width="100px" height="100px"  alt="" />
-</body>
 
+</body>
 </html>

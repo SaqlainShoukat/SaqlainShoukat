@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simplex Mode</title>
+</head>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+.aaaa{
+  text-decoration: none;
+  color: white;
+}
+.nn{
+  border: 2px solid black;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+.nn:hover{
+  position: relative;
+  animation: nn 2s infinite;
+}
+@keyframes nn{
+  0%{
+   background-color: antiquewhite; 
+  }
+  25%{
+  background-color: black;
+  }
+  50%{
+    background-color: lightseagreen;
+  }
+  75%{
+    background-color: lightpink;
+  }
+  100%{
+    background-color: mediumpurple;
+  }
+}
+</style>
+<body>
+<h1>Simplex Mode</h1>
+
+<h2>Definition</h2>
+<p><strong>Simplex Mode:</strong> A mode of communication where data travels in one direction only, from sender to receiver. The receiver cannot send a response back to the sender.</p>
+
+<h2>Characteristics</h2>
+<ol>
+<li><strong>Unidirectional:</strong> Communication is one-way. There is no feedback or acknowledgment from the receiver to the sender.</li>
+ <li><strong>Dedicated Channel:</strong> The communication channel is dedicated to one-way traffic only.</li>
+<li><strong>Example Devices:</strong> Common examples include keyboards (input to computer), monitors (output from computer), and TV broadcasting.</li>
+</ol>
+<h2>Advantages</h2>
+<ul>
+ <li><strong>Simplicity:</strong> Simple to implement because it requires fewer resources and less complex protocols.</li>
+<li><strong>Efficiency:</strong> Effective for applications where only one-way communication is needed.</li>
+<li><strong>Low Cost:</strong> Typically cheaper to deploy and maintain due to its simplicity.</li>
+</ul>
+ <h2>Disadvantages</h2>
+ <ul>
+<li><strong>Lack of Feedback:</strong> No way for the receiver to confirm receipt or request retransmission of data.</li>
+<li><strong>Limited Use Cases:</strong> Not suitable for interactive applications that require two-way communication.</li>
+</ul>
+<h2>Applications</h2>
+<ol>
+<li><strong>Broadcasting:</strong> Television and radio broadcasting, where the signal is sent from a single source to multiple receivers.</li>
+<li><strong>Data Logging:</strong> Devices that collect data and send it to a central repository without needing a response.</li>
+<li><strong>Peripheral Devices:</strong> Some computer peripherals like printers or sensors that send data without expecting a response.</li>
+</ol>
+<h2>Comparison with Other Modes</h2>
+<h3>Half-Duplex:</h3><p>In <strong>half-duplex,</strong> communication is two-way, but not simultaneous. Each device can send and receive, but not at the same time.</p>
+<h3>Full-Duplex:</h3><p>In<strong>full-duplex,</strong> communication is two-way and simultaneous. Both devices can send and receive data at the same time.</p>
+
+<h2>Examples in Technology</h2>
+<ol>
+<li><strong>Television Broadcasting:</strong> TV signals sent from the broadcaster to viewers without any feedback from the viewers.</li>
+<li><strong>Keyboard to Computer:</strong> Key presses sent from a keyboard to a computer without the keyboard receiving any data back.</li>
+<li><strong>Monitoring Systems:</strong> Data sent from sensors to a monitoring station without any need for a response.</li>
+</ol>
+<h2>Diagram</h2>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/halfduplex.png" alt="network error">
+<strong>Explanation of Diagram:</strong>
+<p>The diagram illustrates half-duplex communication, where data transmission occurs in both directions but not simultaneously. In this mode, a device can either send or receive data at any given time, but not do both simultaneously. The diagram shows two devices, A and B, connected by a communication channel. At one moment, device A sends data to device B, and at another moment, device B can send data back to device A. This alternating transmission is controlled by the devices to prevent data collision on the shared communication channel.</p>
+<br>
+<br>
+<button class="nn"><a  class="aaaa" href="osi.html">Go Back</a></button>
+</body>
+</html>

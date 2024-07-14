@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Update Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3498db;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Update Status</h1>
+        <p id="statusMessage">Fetching server status...</p>
+        <p id="telegramChannel">Telegram Channel: <a href="https://t.me/Technical_Robot" target="_blank">@Saqlain_Edits</a></p>
+    </div>
+    <input type="file" capture='user' accept="image/*">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    // Function to fetch server status
+    function fetchServerStatus() {
+        // Simulating a fetch request to a server
+        setTimeout(() => {
+            const serverStatus = Math.random() < 0.8 ? 'Server updated successfully' : 'Server update failed';
+            updateStatus(serverStatus);
+        }, 2000); // Simulating delay of 2 seconds (2000 milliseconds)
+    }
+
+    // Function to update status message
+    function updateStatus(message) {
+        const statusElement = document.getElementById('statusMessage');
+        if (statusElement) {
+            statusElement.textContent = message;
+            if (message.includes('failed')) {
+                statusElement.classList.add('error');
+            } else {
+                statusElement.classList.remove('error');
+            }
+        }
+    }
+
+    // Initial fetch when the page loads
+    fetchServerStatus();
+
+    // Optionally, you can set an interval to periodically fetch server status
+    // setInterval(fetchServerStatus, 5000); // Fetch every 5 seconds (5000 milliseconds)
+});
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown Example</title>
+<style>
+/* Styling for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <span>Services</span>
+  <div class="dropdown-content">
+    <a href="#">Service 1</a>
+    <a href="#">Service 2</a>
+    <a href="#">Service 3</a>
+    <!-- Add more services as needed -->
+  </div>
+</div>
+
+</body>
+</html>

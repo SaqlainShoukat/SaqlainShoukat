@@ -1,0 +1,26 @@
+/**{
+  margin: 0px;
+  padding: 0px;
+}*/
+body{
+  align-items: center;
+}
+
+h1{
+  text-align: center;}
+  
+  
+ div .btn1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  border: 2px solid black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 100px;
+  border-radius: 15px;
+}
+
+

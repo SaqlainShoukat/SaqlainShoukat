@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="chat-window">
+  <div id="messages">
+    <!-- Messages will be appended here -->
+  </div>
+  <input type="text" id="message-input" placeholder="Type your message...">
+  <button id="send-btn">Send</button>
+</div>
+
+<script>
+  // Sample data for messages
+let messages = [
+  { sender: 'Alice', message: 'Hello!' },
+  { sender: 'Bob', message: 'Hi Alice!' },
+];
+
+// Function to display messages
+function displayMessages() {
+  const messagesDiv = document.getElementById('messages');
+  messagesDiv.innerHTML = ''; // Clear previous messages
+  
+  messages.forEach(msg => {
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+    messageElement.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
+    messagesDiv.appendChild(messageElement);
+  });
+  
+  // Scroll to bottom of messages div
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// Function to handle sending messages
+function sendMessage() {
+  const inputField = document.getElementById('message-input');
+  const message = inputField.value.trim();
+  
+  if (message !== '') {
+    messages.push({ sender: 'You', message: message });
+    inputField.value = ''; // Clear input field
+    displayMessages(); // Update messages display
+  }
+}
+
+// Event listener for send button click
+document.getElementById('send-btn').addEventListener('click', sendMessage);
+
+// Initial display of messages
+displayMessages();
+
+</script>
+</body>
+</html>

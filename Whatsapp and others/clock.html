@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analog Clock with Saqlain Logo</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="clock">
+  <div class="logo">
+    Saqlain <!-- Replace with your logo or text -->
+  </div>
+  <div class="center"></div>
+  <div class="hour"></div>
+  <div class="minute"></div>
+  <div class="second"></div>
+</div>
+
+<script>
+  function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  
+  const hourHand = document.querySelector('.hour');
+  const minuteHand = document.querySelector('.minute');
+  const secondHand = document.querySelector('.second');
+  
+  const hourDeg = (hours % 12) * 30 + minutes / 2; // 30 degrees per hour, plus 0.5 degrees per minute
+  const minuteDeg = minutes * 6; // 6 degrees per minute
+  const secondDeg = seconds * 6; // 6 degrees per second
+  
+  hourHand.style.transform = `translate(-50%, -100%) rotate(${hourDeg}deg)`;
+  minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteDeg}deg)`;
+  secondHand.style.transform = `translate(-50%, -100%) rotate(${secondDeg}deg)`;
+  
+  setTimeout(updateClock, 1000); // Update every second
+}
+
+updateClock(); // Initial call to start the clock
+
+</script>
+</body>
+</html>

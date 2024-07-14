@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half-Duplex Mode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+.aaaa{
+  text-decoration: none;
+  color: white;
+}
+.nn{
+  border: 2px solid black;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+.nn:hover{
+  position: relative;
+  animation: nn 2s infinite;
+}
+@keyframes nn{
+  0%{
+   background-color: antiquewhite; 
+  }
+  25%{
+  background-color: black;
+  }
+  50%{
+    background-color: lightseagreen;
+  }
+  75%{
+    background-color: lightpink;
+  }
+  100%{
+    background-color: mediumpurple;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Half-Duplex Mode</h1>
+    <h2>Definition</h2>
+    <p><strong>Half-Duplex Mode</strong>: A mode of communication where data transmission is bidirectional, but not simultaneous. Each device can send and receive data, but not at the same time.</p>
+    
+    <h2>Characteristics</h2>
+    <ol>
+        <li><strong>Bidirectional</strong>: Communication can go both ways, but not simultaneously. Only one device can transmit at a time.</li>
+        <li><strong>Switching Roles</strong>: Devices take turns in sending and receiving data.</li>
+        <li><strong>Example Devices</strong>: Walkie-talkies, older Ethernet networks (using CSMA/CD), and shared-bandwidth networks.</li>
+    </ol>
+    
+    <h2>Advantages</h2>
+    <ul>
+        <li><strong>Cost-Effective</strong>: Requires fewer resources than full-duplex systems, making it cheaper to implement.</li>
+        <li><strong>Simplicity</strong>: Easier to design and manage compared to full-duplex systems.</li>
+        <li><strong>Efficiency in Certain Applications</strong>: Suitable for applications where simultaneous two-way communication is not required.</li>
+    </ul>
+    
+    <h2>Disadvantages</h2>
+    <ul>
+        <li><strong>Non-Simultaneous Communication</strong>: Only one device can transmit at a time, which can lead to delays in communication.</li>
+        <li><strong>Potential for Collisions</strong>: In shared environments, there is a risk of data collisions if two devices attempt to communicate simultaneously.</li>
+    </ul>
+    
+    <h2>Applications</h2>
+    <ol>
+        <li><strong>Walkie-Talkies</strong>: Used in scenarios where users take turns speaking.</li>
+        <li><strong>Two-Way Radios</strong>: Common in emergency services and construction sites where communication alternates between parties.</li>
+        <li><strong>Older Ethernet Networks</strong>: Used in older network setups where data transmission alternates to prevent collisions.</li>
+    </ol>
+    
+    <h2>Comparison with Other Modes</h2>
+    <ul>
+        <li><strong>Simplex</strong>: In simplex mode, communication is unidirectional, with no ability for the receiver to send data back to the sender.</li>
+        <li><strong>Full-Duplex</strong>: In full-duplex mode, communication is bidirectional and simultaneous, allowing both devices to send and receive data at the same time.</li>
+    </ul>
+    
+    <h2>Examples in Technology</h2>
+    <ol>
+        <li><strong>Walkie-Talkies</strong>: Devices where one person speaks while the other listens, then they switch roles.</li>
+        <li><strong>Two-Way Radios</strong>: Used in various industries for communication where users alternate between speaking and listening.</li>
+        <li><strong>Legacy Ethernet</strong>: Early Ethernet networks where data transmission alternated between devices to avoid collisions.</li>
+    </ol>
+    <h2>Diagram</h2>
+    <img src="https://beginnersbook.com/wp-content/uploads/2019/04/Half-Duplex_mode.png" alt="network error" width="380px">
+    <strong>Explanation of Diagram:</strong>
+    <p>The diagram depicts half-duplex communication, demonstrating how data transmission occurs alternately between two devices over a single channel. In this mode, Device A can send data to Device B, or Device B can send data to Device A, but not at the same time. The arrows indicate the direction of data flow, showing that data can travel in both directions, but only one direction at a time. This setup prevents simultaneous transmission and potential data collision, ensuring orderly communication by alternating the roles of sender and receiver between the devices.</p>
+    <br>
+<br>
+<button class="nn"><a class="aaaa" href="osi.html">Go Back</a></button>
+</body>
+</html>
